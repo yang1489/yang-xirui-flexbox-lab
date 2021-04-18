@@ -1,0 +1,128 @@
+header{
+    display: flex;
+    background-color: aqua;
+    height: 100px;
+    width: 100%;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color:mediumturquoise;
+    height: 40px;
+    width: 100%;
+    margin: auto;
+}
+body{
+    background-color:darkgray;
+}
+article{
+    display: flex;
+    flex-direction: row;
+    background-color:lightblue;
+    
+}
+aside{
+    background-color: darkgoldenrod ;
+    height: 900px;
+  
+}
+nav{
+    background-color: chartreuse;
+    min-height: 40px;
+}
+@media only screen and (max-width: 480px){
+    div{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        float: left;
+        width: 90%;
+        flex:1;
+        border: 1px dashed red;
+        background-color:cornflowerblue;
+        justify-content: center;
+        align-items: center;
+        margin: 5%;
+         
+        
+    }
+    aside{
+        display: none;
+    }
+  
+}
+
+@media only screen and (min-width:481px){
+    div{display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+   section{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    flex:1;
+    border: 1px dashed red;
+    background-color: cyan;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin: 5%;
+   }
+   article{
+    float: left;
+    height:405px;
+    width: 80%;
+}
+aside{
+    float:right;
+    width: 20%;
+    height: 405px;
+}
+
+}
+    
+
+@media only screen and (min-width: 769px){
+  div {
+        display: flex;        
+        float: left;
+        text-align: center;
+        width: 30%;
+    }
+    section{
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+        flex:1;
+        border: 1px dashed red;
+        background-color: cyan;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        margin: 5%;
+    }
+    
+    article{
+        height:455px;
+        float: left;
+        width: 80%;
+    }
+    aside{
+        float:right;
+        width: 20%;
+        height: 455px;
+    }
+}
